@@ -132,8 +132,8 @@ public function unfavorite($userId)
 }
 
 
-public function is_favoriting($userId) {
-    return $this->favoritings()->where('favorite_id', $userId)->exists();
+public function is_favoriting($userid) {
+    return $this->favoritings()->where('favorite_id', $userid)->exists();
 }
 
 

@@ -19,8 +19,9 @@
                          
                     {!! Form::close() !!}
                 @endif
-                {!! Form::submit('Favorite', ['class' => 'btn btn-primary btn-xs']) !!}
+                
             </div>
+            @include('favorite.fav_button', ['micropost' =>$micropost])
         </div>
     </li>
 @endforeach
