@@ -11,7 +11,8 @@
 |
 */
 //Route::get('/', function () {
-//    return view('welcome');
+  // return view('welcome');
+    
 //});
 
 Route::get('/', 'MicropostsController@index');
@@ -41,8 +42,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('microposts', 'MicropostsController', ['only' => ['store', 'destroy']]);
 
 
-   
-       
-        
 
 });
